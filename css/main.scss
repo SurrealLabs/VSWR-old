@@ -1,0 +1,88 @@
+/*	
+*	Stylesheet 
+*	Main
+*
+*/
+
+@import "variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0; 
+}
+
+/* Layout */
+
+body {
+	background-color: $bg_main;
+}
+
+nav {
+	width: 100%;
+	background: $bg_darkblue;
+	> ul {
+		width: 1000px;
+		margin: 0 auto;
+
+		> li {
+			padding: 1em;
+			width: 20%;
+			float: left;
+			list-style: none;
+			font-family: 'Open Sans', sans-serif;
+			font-weight: 800;
+			color: $font_light;
+		}
+	}
+}
+
+section {
+	&.greyed {
+		background: $bg_lightgrey;
+	}
+}
+
+article {
+	width: 1000px;
+	margin: 0 auto;
+	padding: 75px 0;
+
+	> h1 {
+		font-size: 5.75em;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 800;
+		color: $font_dark;
+		text-rendering: optimizeLegibility;
+	}
+
+	> p {
+		font-size: 1.125em;
+		font-family: 'Open Sans', sans-serif;
+		font-weight: 400;
+		color: $font_dark;
+	}
+}
+
+footer {
+	width: 100%;
+	height: 225px;
+	background: $bg_darkgrey;
+}
+
+/* Clearfix */
+/* For modern browsers */
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table; 
+}
+
+.clearfix:after {
+  clear: both; 
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {
+  zoom: 1; 
+}
