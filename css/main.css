@@ -16,11 +16,13 @@
 
 /* Layout */
 body {
-  background-color: #f0f0f0; }
+  background-color: #f0f0f0;
+  font-family: 'Open Sans', sans-serif; }
 
 nav {
   width: 100%;
-  background: black; }
+  background: #0d0d0d;
+  border-bottom: #1e2434 1px solid; }
   nav > #vswr {
     height: 20px;
     width: auto;
@@ -30,19 +32,41 @@ nav {
     width: 1000px;
     margin: 0 auto; }
     nav > ul > li {
-      padding: 1em;
-      width: 10%;
+      padding: 1em 0;
+      margin: 0 2em;
+      border-bottom: 3px #eaeaea solid;
       float: right;
       list-style: none;
       font-family: 'Open Sans', sans-serif;
       font-weight: 600;
       font-size: 0.725em;
+      text-align: center;
+      text-transform: uppercase;
       color: #eaeaea; }
 
 section.greyed {
   background: #dcdfe7; }
 section.darkblued {
-  background: #0b0e17; }
+  background: #0b0e17;
+  color: #eaeaea; }
+section.darkgreyed {
+  background: #171717;
+  color: #eaeaea; }
+section.blacked {
+  background: #0d0d0d;
+  color: #eaeaea; }
+section.title {
+  border-top: #262626 1px solid;
+  border-bottom: #262626 1px solid; }
+  section.title > h1 {
+    width: 970px;
+    margin: 0 auto;
+    color: #eaeaea;
+    font-size: 1.5em;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 25px 0 25px 30px;
+    background: url("../images/icon.png") no-repeat left; }
 
 article {
   width: 1000px;
@@ -50,42 +74,35 @@ article {
   padding: 75px 0; }
   article > h1 {
     font-size: 5.75em;
-    font-family: 'Open Sans', sans-serif;
     font-weight: 800;
-    color: #171717;
     text-rendering: optimizeLegibility; }
   article > p {
     font-size: 1.125em;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 400;
-    color: #171717; }
+    font-weight: 400; }
   article#splash {
     width: 1200px;
     height: 300px;
     background: url("../images/splash.jpg") #0b0e17 no-repeat; }
     article#splash .splash_right {
       width: 350px;
-      margin-right: 155px;
+      margin-right: 200px;
       float: right;
       text-transform: uppercase;
       color: #eaeaea;
       text-shadow: #202016 4px 4px 5px; }
       article#splash .splash_right > h1 {
-        font-family: 'Open Sans', sans-serif;
         font-weight: 800;
         font-size: 7.225em;
         color: #df9300;
         margin: 0 0 25px -8px;
         line-height: 0.85em; }
       article#splash .splash_right > h2 {
-        font-family: 'Open Sans', sans-serif;
         font-weight: 800;
         font-size: 1.5em; }
         article#splash .splash_right > h2.b {
           font-size: 2em;
           line-height: 0.95em; }
       article#splash .splash_right > p {
-        font-family: 'Open Sans', sans-serif;
         font-weight: 400;
         font-size: 1.025em;
         text-transform: none; }
@@ -93,7 +110,7 @@ article {
 footer {
   width: 100%;
   height: 225px;
-  background: #171717; }
+  background: #0b0e17; }
 
 /* Clearfix */
 /* For modern browsers */

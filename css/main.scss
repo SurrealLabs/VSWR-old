@@ -16,11 +16,13 @@
 
 body {
 	background-color: $bg_main;
+	font-family: 'Open Sans', sans-serif;
 }
 
 nav {
 	width: 100%;
-	background: black;
+	background: #0d0d0d;
+	border-bottom: #1e2434 1px solid;
 	> #vswr {
 		height: 20px;
 		width: auto;
@@ -32,13 +34,16 @@ nav {
 		margin: 0 auto;
 
 		> li {
-			padding: 1em;
-			width: 10%;
+			padding: 1em 0;
+			margin: 0 2em;
+			border-bottom: 3px $font_light solid;
 			float: right;
 			list-style: none;
 			font-family: 'Open Sans', sans-serif;
 			font-weight: 600;
-			font-size: 0.725em;
+			font-size: 0.725em;			
+			text-align: center;
+			text-transform: uppercase;
 			color: $font_light;
 		}
 	}
@@ -51,6 +56,34 @@ section {
 
 	&.darkblued {
 		background: $bg_darkblue;
+		color: $font_light;
+	}
+
+	&.darkgreyed {
+		background: $bg_darkgrey;		
+		color: $font_light;
+	}
+
+	&.blacked {
+		background: $bg_black;
+		color: $font_light;
+	}
+
+	&.title {
+		border-top: #262626 1px solid;
+		border-bottom: #262626 1px solid;
+
+		> h1 {
+			width: 970px;
+			margin: 0 auto;
+			color: $font_light;
+			font-size: 1.5em;
+			font-weight: 800;
+			text-transform: uppercase;
+			padding: 25px 0 25px 30px;
+			background: url('../images/icon.png') no-repeat left;
+
+		}
 	}
 }
 
@@ -61,17 +94,13 @@ article {
 
 	> h1 {
 		font-size: 5.75em;
-		font-family: 'Open Sans', sans-serif;
 		font-weight: 800;
-		color: $font_dark;
 		text-rendering: optimizeLegibility;
 	}
 
 	> p {
 		font-size: 1.125em;
-		font-family: 'Open Sans', sans-serif;
 		font-weight: 400;
-		color: $font_dark;
 	}
 
 	&#splash {
@@ -81,14 +110,13 @@ article {
 
 		.splash_right {
 			width: 350px;
-			margin-right: 155px;
+			margin-right: 200px;
 			float: right;
 			text-transform: uppercase;
 			color: $font_light;
 			text-shadow: #202016 4px 4px 5px;
 
 			> h1 {
-				font-family: 'Open Sans', sans-serif;
 				font-weight: 800;
 				font-size: 7.225em;
 				color: $font_highlight;
@@ -97,7 +125,6 @@ article {
 			}
 
 			> h2 {
-				font-family: 'Open Sans', sans-serif;
 				font-weight: 800;
 				font-size: 1.5em;
 				&.b {
@@ -107,7 +134,6 @@ article {
 			}
 
 			> p {
-				font-family: 'Open Sans', sans-serif;
 				font-weight: 400;
 				font-size: 1.025em;
 				text-transform: none;
@@ -119,7 +145,7 @@ article {
 footer {
 	width: 100%;
 	height: 225px;
-	background: $bg_darkgrey;
+	background: $bg_darkblue;
 }
 
 /* Clearfix */
