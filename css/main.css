@@ -34,7 +34,6 @@ nav {
     nav > ul > li {
       padding: 1em 0;
       margin: 0 2em;
-      border-bottom: 3px #eaeaea solid;
       float: right;
       list-style: none;
       font-family: 'Open Sans', sans-serif;
@@ -79,6 +78,8 @@ article {
   article > p {
     font-size: 1.125em;
     font-weight: 400; }
+  article.nopadding {
+    padding: 25px 0; }
   article#splash {
     width: 1200px;
     height: 300px;
@@ -106,6 +107,28 @@ article {
         font-weight: 400;
         font-size: 1.025em;
         text-transform: none; }
+  article .columned {
+    width: 250px;
+    float: left;
+    margin: 0 40px; }
+    article .columned > .button {
+      font-size: 1.15em;
+      text-transform: uppercase;
+      font-weight: 600;
+      width: 250px;
+      background: url("../images/chevron.png") no-repeat 10% #2a344f;
+      box-shadow: 1px 1px 0px #4A536D;
+      text-align: center;
+      padding: 5px 0; }
+      article .columned > .button:hover {
+        background-color: #4A536D; }
+    article .columned img {
+      margin: 20px 0;
+      border-bottom: 5px solid #eaeaea;
+      border-top: 5px solid #eaeaea; }
+    article .columned p {
+      font-size: 0.855em;
+      text-align: justify; }
 
 footer {
   width: 100%;
