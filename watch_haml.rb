@@ -11,6 +11,7 @@ require 'fssm'
 require 'haml'
 require 'time'
 
+puts 'Watchr started'
 # directory = ARGV.first
 directory = Dir.pwd
 FSSM.monitor(directory, '**/*.haml') do
