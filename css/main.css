@@ -73,7 +73,7 @@ body {
   background: #0c0e12; }
 
 .units-container {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto; }
 
 #logo {
@@ -81,13 +81,19 @@ body {
   #logo > img {
     margin-top: 10px; }
 
-.quicklink p {
-  padding: 0 22px; }
-.quicklink img {
-  margin: 55px 0 25px 0; }
+.quicklink {
+  padding: 0 22px;
+  text-align: center; }
+  .quicklink h2 {
+    color: #e1e3e6;
+    text-transform: uppercase; }
+  .quicklink p {
+    text-align: justify; }
+  .quicklink img {
+    margin: 55px 0 25px 0; }
 
 section#anmeldung .units-row-end {
-  width: 1000px;
+  max-width: 1000px;
   margin: 0 auto; }
 
 /* =Nav
@@ -125,12 +131,37 @@ section.splash {
 -----------------------------------------------------------------------------*/
 section.splash#header {
   background: url(../images/bg_galaxy.jpg);
-  background-size: 100%; }
+  background-size: cover; }
 
 section.splash#anmeldung {
   height: 500px;
   background: url(../images/bg_1313.jpg);
   background-size: 100%; }
+  section.splash#anmeldung #characters-welcome {
+    height: 466px;
+    background: url(../images/characters-welcome.png);
+    background-size: cover; }
 
 /* =Footer
 -----------------------------------------------------------------------------*/
+/* #Screen Adjustments
+-----------------------------------------------------------------------------*/
+@media only screen and (max-width: 767px) {
+  .quicklink {
+    padding: 0 15%; }
+
+  section.splash#header p, section.splash#anmeldung p {
+    width: 85%;
+    margin: 55px auto; }
+
+  #logo, #nav {
+    text-align: center;
+    margin-bottom: 0; }
+
+  #logo {
+    background: #1c212a; }
+
+  nav ul {
+    display: inline-block;
+    float: none;
+    margin: 10px auto 0 auto; } }
