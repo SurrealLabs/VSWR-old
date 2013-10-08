@@ -9,7 +9,7 @@
     %link(rel='shortcut icon' type='image/x-icon' href='/vswricon.ico')
     %link(rel='stylesheet' type='text/css' href='css/kube.css')
     %link(rel='stylesheet' type='text/css' href='css/main.css')
-  %body#index
+  %body#anmeldung
     %nav.units-container
       .units-row-end
         .unit-20#logo
@@ -20,19 +20,22 @@
             %li='imperium'
             %li='interna'
             %li='kontakt'
-            %li#anmelden
-              %a(href='anmeldung.html')
-                jetzt anmelden
-    %section.splash#header
-      %h2='Erlebe die'
-      %h3='spannendste'
-      %h4='aller Geschichten'
-      %h5='Deine'
-      %p
-        Erfinde deinen eigenen Charakter, erlebe mit ihm sein Leben voller Glück, Pech und Spannung.
-      %p
-        Tritt den Vereinten Star Wars Rollenspielen bei – und
-        schreibe mit uns die Geschichte der Galaxis.
+            %li#anmelden='jetzt anmelden'
+
+    %section.splash#anmeldung.units-container
+      .units-row-end.units-split
+        .unit-60#characters-welcome(style='margin-top:31px;')
+        .unit-40
+          %h4='deine geschichte'
+          %h3='deine herkunft'
+          %h2='dein name'
+          %p
+            Der Name ist das Fundament der eigenen Idnetität. Mancher trägt
+            seinen Namen voller Stolz, andere zeigen sich wenig glücklich über
+            die elterliche Wahl. Auch dein Charakter braucht einen Namen, mit
+            ihm steht und fällt deine Idee.
+          %form
+            %input(type='text' value='Erster Schritt - Namen eingeben')
     %section.units-container
       .units-row
         .quicklink.unit-33
@@ -84,15 +87,3 @@
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo
             dolores et ea rebum.
-    %section.splash#anmeldung.units-container
-      .units-row-end.units-split
-        .unit-60#characters-welcome(style='margin-top:31px;')
-        .unit-40
-          %h2='dein name'
-          %h3='deine herkunft'
-          %h4='deine geschichte'
-          %p
-            Beginne dein eigenes Abenteuer jetzt mit dem ersten Schritt. Unser
-            Erstellungsprozess hilft dir dabei mit interessanten Informationen
-            und jeder Menge Details rund ums Star Wars Universum.
-          %a.button='Jetzt anmelden'
