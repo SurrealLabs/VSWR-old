@@ -109,7 +109,7 @@ section.splash {
 
 #logo {
   height: 40px;
-  > img {
+  img {
     margin-top: 10px;
   }
 }
@@ -147,11 +147,21 @@ nav ul {
   display: block;
   height: 40px;
   margin: 0;
+  a {
+    color: $main-light;
+    text-decoration: none;
+    &:hover {
+      color: $main-gold;
+    }
+  }
   > li {
     list-style: none;
     float: left;
     margin: 0 20px;
     line-height: 40px;
+    &.active a {
+      color: $main-gold;
+    }
     &#anmelden {
       background: $main-gold;
       color: $main-dark;
@@ -189,6 +199,81 @@ section#header {
   background-size: cover;
 }
 
+body#rollenspiel section#anmeldung {
+  h2 { font-size: 2.50em; line-height: 1.25em; margin-top: 50px;  }
+  h3 { font-size: 3.35em; line-height: 0.95em; }
+  h4 { font-size: 3.05em; line-height: 1.25em; }
+  h5 { font-size: 7em; line-height: 0.85em; }
+}
+
+body#interna {
+  section#header {
+    background: url(../images/bg_interna.jpg);
+    background-size: cover;
+    h2 { font-size: 5.55em; line-height: 1em; margin-top: 100px;  }
+    h3 { font-size: 2.85em; line-height: 0.85em; }
+    h4 { font-size: 4.70em; line-height: 1.25em; }
+  }
+  .einheit {
+    margin-top: 3em;
+    span {
+      color: lighten($main-dark, 60%);
+    }
+    h2 {
+      font-size: 1.55em;
+      line-height: 3.5em;
+      color: $main-light;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    img {
+      margin-bottom: -50px;
+    }
+    p {
+      font-size: 115%;
+      padding: 0.15em 0.15em 0.15em 3.55em;
+      margin-bottom: 0;
+    }
+    table {
+      width: 90%;
+      margin-top: 45px;
+      float: right;
+      tr {
+        &.npc {
+          color: lighten($main-dark, 60%);
+        }
+        &:hover {
+          background: lighten($main-dark, 5%);
+        }
+      }
+      th {
+        font-weight: bolder;
+        background: lighten($main-dark, 20%);
+        border: 0;
+        color: darken($main-light, 10%);
+        &:first-child {
+          padding-left: 3.45em;
+        }
+      }
+      td {
+        padding: 1em;
+        border-bottom: 1px solid $main-light/4;
+        &.akte {
+          width: 5px;
+          a {
+            color: $main-gold;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .info p {
+      padding: 3em 3.55em;
+      background: lighten($main-dark, 10%);
+    }
+}
+
 body#anmeldung section#anmeldung {
   h2 { margin-top: 0;  }
   h4 { margin-top: 50px; }
@@ -200,6 +285,7 @@ body#anmeldung section#anmeldung {
     background: url(../images/duty-officer.png) no-repeat;
   }
 }
+
 section#anmeldung {
   min-height: 500px;
   background: url(../images/bg_1313.jpg);
@@ -223,6 +309,7 @@ section#anmeldung {
     }
   }
 }
+
 form {
   padding: 0 1.35em;
   input[type=text] {

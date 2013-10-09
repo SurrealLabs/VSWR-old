@@ -9,7 +9,7 @@
     %link(rel='shortcut icon' type='image/x-icon' href='/vswricon.ico')
     %link(rel='stylesheet' type='text/css' href='css/kube.css')
     %link(rel='stylesheet' type='text/css' href='css/main.css')
-  %body#anmeldung
+  %body#rollenspiel
     %nav.units-container
       .units-row-end
         .unit-20#logo
@@ -17,7 +17,7 @@
             %img(src='images/logo.png')
         .unit-80#nav
           %ul
-            %li
+            %li.active
               %a(href='rollenspiel.html')
                 rollenspiel
             %li
@@ -29,23 +29,26 @@
             %li
               %a(href='kontakt.html')
                 kontakt
-            %li.active
+            %li#anmelden
               %a(href='anmeldung.html')
                 jetzt anmelden
     %section.splash#anmeldung.units-container
       .units-row-end.units-split
         .unit-60#characters-welcome(style='margin-top:31px;')
         .unit-40
-          %h4='deine geschichte'
-          %h3='deine herkunft'
-          %h2='dein name'
+          %h2='Vor kurzer Zeit in'
+          %h3='einer Galaxie'
+          %h4='in deiner Nähe'
           %p
-            Der Name ist das Fundament der eigenen Idnetität. Mancher trägt
-            seinen Namen voller Stolz, andere zeigen sich wenig glücklich über
-            die elterliche Wahl. Auch dein Charakter braucht einen Namen, mit
-            ihm steht und fällt deine Idee.
-          %form
-            %input(type='text' value='Erster Schritt - Namen eingeben')
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua. At vero eos et accusam et justo duo
+            dolores et ea rebum.
+            %br
+            %br
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
+            nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
+            erat, sed diam voluptua.
     %section.units-container
       .units-row
         .quicklink.unit-33
@@ -97,3 +100,4 @@
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo
             dolores et ea rebum.
+

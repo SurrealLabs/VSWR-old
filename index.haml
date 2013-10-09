@@ -13,13 +13,22 @@
     %nav.units-container
       .units-row-end
         .unit-20#logo
-          %img(src='images/logo.png')
+          %a(href='index.html')
+            %img(src='images/logo.png')
         .unit-80#nav
           %ul
-            %li='rollenspiel'
-            %li='imperium'
-            %li='interna'
-            %li='kontakt'
+            %li
+              %a(href='rollenspiel.html')
+                rollenspiel
+            %li
+              %a(href='imperium.html')
+                imperium
+            %li
+              %a(href='interna.html')
+                interna
+            %li
+              %a(href='kontakt.html')
+                kontakt
             %li#anmelden
               %a(href='anmeldung.html')
                 jetzt anmelden
@@ -84,15 +93,3 @@
             nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam
             erat, sed diam voluptua. At vero eos et accusam et justo duo
             dolores et ea rebum.
-    %section.splash#anmeldung.units-container
-      .units-row-end.units-split
-        .unit-60#characters-welcome(style='margin-top:31px;')
-        .unit-40
-          %h2='dein name'
-          %h3='deine herkunft'
-          %h4='deine geschichte'
-          %p
-            Beginne dein eigenes Abenteuer jetzt mit dem ersten Schritt. Unser
-            Erstellungsprozess hilft dir dabei mit interessanten Informationen
-            und jeder Menge Details rund ums Star Wars Universum.
-          %a.button='Jetzt anmelden'

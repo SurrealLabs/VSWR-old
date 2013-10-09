@@ -112,7 +112,7 @@ section.splash {
 
 #logo {
   height: 40px; }
-  #logo > img {
+  #logo img {
     margin-top: 10px; }
 
 .quicklink {
@@ -140,11 +140,18 @@ nav ul {
   display: block;
   height: 40px;
   margin: 0; }
+  nav ul a {
+    color: #e1e3e6;
+    text-decoration: none; }
+    nav ul a:hover {
+      color: #f5c032; }
   nav ul > li {
     list-style: none;
     float: left;
     margin: 0 20px;
     line-height: 40px; }
+    nav ul > li.active a {
+      color: #f5c032; }
     nav ul > li#anmelden {
       background: #f5c032;
       color: #12151c;
@@ -172,6 +179,76 @@ section#header {
 section#header {
   background: url(../images/bg_galaxy.jpg);
   background-size: cover; }
+
+body#rollenspiel section#anmeldung h2 {
+  font-size: 2.50em;
+  line-height: 1.25em;
+  margin-top: 50px; }
+body#rollenspiel section#anmeldung h3 {
+  font-size: 3.35em;
+  line-height: 0.95em; }
+body#rollenspiel section#anmeldung h4 {
+  font-size: 3.05em;
+  line-height: 1.25em; }
+body#rollenspiel section#anmeldung h5 {
+  font-size: 7em;
+  line-height: 0.85em; }
+
+body#interna section#header {
+  background: url(../images/bg_interna.jpg);
+  background-size: cover; }
+  body#interna section#header h2 {
+    font-size: 5.55em;
+    line-height: 1em;
+    margin-top: 100px; }
+  body#interna section#header h3 {
+    font-size: 2.85em;
+    line-height: 0.85em; }
+  body#interna section#header h4 {
+    font-size: 4.70em;
+    line-height: 1.25em; }
+body#interna .einheit {
+  margin-top: 3em; }
+  body#interna .einheit span {
+    color: #9fa9c1; }
+  body#interna .einheit h2 {
+    font-size: 1.55em;
+    line-height: 3.5em;
+    color: #e1e3e6;
+    text-transform: uppercase;
+    text-align: center; }
+  body#interna .einheit img {
+    margin-bottom: -50px; }
+  body#interna .einheit p {
+    font-size: 115%;
+    padding: 0.15em 0.15em 0.15em 3.55em;
+    margin-bottom: 0; }
+  body#interna .einheit table {
+    width: 90%;
+    margin-top: 45px;
+    float: right; }
+    body#interna .einheit table tr.npc {
+      color: #9fa9c1; }
+    body#interna .einheit table tr:hover {
+      background: #1c212c; }
+    body#interna .einheit table th {
+      font-weight: bolder;
+      background: #3a445a;
+      border: 0;
+      color: #c5c9cf; }
+      body#interna .einheit table th:first-child {
+        padding-left: 3.45em; }
+    body#interna .einheit table td {
+      padding: 1em;
+      border-bottom: 1px solid #383839; }
+      body#interna .einheit table td.akte {
+        width: 5px; }
+        body#interna .einheit table td.akte a {
+          color: #f5c032;
+          text-decoration: none; }
+body#interna .info p {
+  padding: 3em 3.55em;
+  background: #262c3b; }
 
 body#anmeldung section#anmeldung {
   min-height: 500px;
